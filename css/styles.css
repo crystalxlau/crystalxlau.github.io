@@ -41,7 +41,7 @@ body {
   color: #fff;
   font-size: 18px;
   line-height: 1.4;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Georgia, serif;
   background: url(../img/background.jpg) no-repeat center center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -65,11 +65,6 @@ h2 {
   text-align: center;
 }
 
-div .meal {
-  float: left;
-  box-sizing: border-box;
-}
-
 button {
   width: 15%;
   height:0;
@@ -85,13 +80,75 @@ button {
   font-size: 1em;
 }
 
-#map {
-  width: 80%;
+/*.container {
+  width: 30%;
   height: 400px;
-  margin-left: 150px;
+  position: absolute;
+  perspective: 1000px;
+  float: left;
+}*/
+
+#wheel {
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-transition: transform 4s;
+}
+
+#wheel > :nth-child(odd) {
+  background-color: #000;
+  color: #fff;
+}
+
+#wheel > :nth-child(even) {
+  background-color: #fff;
+  color: #000
+}
+/*
+#wheel div:nth-child(1) {
+  transform: rotateX(0deg);
+}*/
+
+.choice {
+  position: absolute;
+  width: 350px;
+  height: auto;
+  opacity: 0.8;
+  color: rgba(0,0,0,0.9);
+  border-radius: 10px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.spin {
+  margin: 150px;
+  width: 20%;
+  height: 310px;
+  -webkit-perspective: 800;
+  -webkit-transform-style: preserve-3d;
+}
+
+.arrow {
+  margin-top: 155px;
+  left: 390px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid black;
+}
+
+#map {
+  width: 60%;
+  height: 400px;
+  margin: 30px;
   background-color: gray;
   box-sizing: border-box;
   border: 1px solid black;
+  float: right;
 }
 
 
