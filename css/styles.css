@@ -55,24 +55,23 @@ body {
 /*******************************************/
 
 header {
-  font-size: 38px;
+  font-size: 23px;
   text-transform: uppercase;
+  margin: 15px 0px 5px 10px;
   text-align: center;
-  margin: 20px;
 }
 
 h2 {
-  text-align: center;
+  font-size: 30px;
 }
 
 button {
   width: 15%;
   height:0;
   padding-bottom: 15%;
-  border-radius: 50%;
-  border: 10px solid #cfdcec;
+  border-radius: 10%;
+  border: 10px solid #fff;
   overflow: hidden;
-  background: #4679BD; 
   box-shadow: 0 0 3px gray;
   text-align: center;
   box-sizing: border-box;
@@ -80,18 +79,16 @@ button {
   font-size: 1em;
 }
 
-/*.container {
-  width: 30%;
-  height: 400px;
+.container {
   position: absolute;
-  perspective: 1000px;
-  float: left;
-}*/
+  left: 50px;
+}
 
 #wheel {
   -webkit-transform-style: preserve-3d;
   -webkit-animation-timing-function: ease-out;
   -webkit-transition: transform 4s;
+  height: 110px;
 }
 
 #wheel > :nth-child(odd) {
@@ -103,14 +100,68 @@ button {
   background-color: #fff;
   color: #000
 }
-/*
-#wheel div:nth-child(1) {
-  transform: rotateX(0deg);
-}*/
 
+/*#wheel div:nth-child(1) {
+  transform: rotateX(0deg);
+  transform: translateZ(200px);
+}
+
+#wheel div:nth-child(2) {
+  transform: rotateX(30deg);
+  transform: translateZ(200px);
+}
+
+#wheel div:nth-child(3) {
+  transform: rotateX(60deg);
+  transform: translateZ(200px);
+}
+
+#wheel div:nth-child(4) {
+  transform: rotateX(90deg);
+  transform: translateZ(200px);
+}
+
+#wheel div:nth-child(5) {
+  transform: rotateX(120deg);
+  transform: translateZ(200px);
+}
+
+#wheel div:nth-child(6) {
+  transform: rotateX(150deg);
+  transform: translateZ(200px);
+}
+
+#wheel div:nth-child(7) {
+  transform: rotateX(180deg);
+  transform: translateZ(200px);
+}
+
+#wheel div:nth-child(8) {
+  transform: rotateX(210deg);
+  transform: translateZ(200px);
+}
+
+#wheel div:nth-child(9) {
+  transform: rotateX(240deg);
+  transform: translateZ(200px);
+}
+
+#wheel div:nth-child(10) {
+  transform: rotateX(270deg);
+  transform: translateZ(200px);
+}
+
+#wheel div:nth-child(11) {
+  transform: rotateX(300deg);
+}
+
+#wheel div:nth-child(12) {
+  transform: rotateX(330deg);
+}
+*/
 .choice {
   position: absolute;
-  width: 350px;
+  width: 250px;
   height: auto;
   opacity: 0.8;
   color: rgba(0,0,0,0.9);
@@ -123,16 +174,18 @@ button {
 }
 
 .spin {
-  margin: 150px;
-  width: 20%;
+  margin: 180px;
+  width: 200px;
   height: 310px;
+  float: left;
+  position: absolute;
   -webkit-perspective: 800;
   -webkit-transform-style: preserve-3d;
 }
 
 .arrow {
-  margin-top: 155px;
-  left: 390px;
+  margin-top: 200px;
+  left: 530px;
   position: absolute;
   width: 0;
   height: 0;
@@ -142,7 +195,7 @@ button {
 }
 
 #map {
-  width: 60%;
+  width: 40%;
   height: 400px;
   margin: 30px;
   background-color: gray;
