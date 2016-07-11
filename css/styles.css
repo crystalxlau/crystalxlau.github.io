@@ -74,6 +74,7 @@ button {
   box-sizing: border-box;
   float: left;
   font-size: 1em;
+  cursor: pointer;
 }
 
 .container {
@@ -181,7 +182,7 @@ button {
 }
 
 .arrow {
-  margin-top: 200px;
+  margin-top: 180px;
   left: 530px;
   position: absolute;
   width: 0;
