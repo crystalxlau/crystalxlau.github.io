@@ -62,17 +62,14 @@ header {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 button {
-  width: 15%;
-  height:0;
+  width: 150px;
   padding-bottom: 15%;
   border-radius: 10%;
-  border: 10px solid #fff;
-  overflow: hidden;
-  box-shadow: 0 0 3px gray;
+  border: 5px solid #fff;
   text-align: center;
   box-sizing: border-box;
   float: left;
