@@ -38,7 +38,7 @@
 /*******************************************/
 
 body {
-  color: #fff;
+  color: #000;
   font-size: 18px;
   line-height: 1.4;
   font-family: Georgia, serif;
@@ -57,29 +57,48 @@ body {
 header {
   font-size: 23px;
   text-transform: uppercase;
-  margin: 15px 0px 5px 10px;
   text-align: center;
+  border-bottom: 1px solid black;
+  background: url(../img/header.jpeg) repeat;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 90px;
+  letter-spacing: 10px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  color: #d3d3d3;
+  text-align: center;
+  text-shadow: 2px 2px black;
 }
 
 button {
+  font-family: Helvetica, sans-serif;
   width: 150px;
-  padding-bottom: 15%;
+  padding: 16px 32px;
   border-radius: 10%;
-  border: 5px solid #fff;
+  border: 3px solid #1e0500;
   text-align: center;
   box-sizing: border-box;
   float: left;
+  position: absolute;
   font-size: 1em;
   cursor: pointer;
+  margin-top: 180px;
+  left: 530px;
+  position: absolute;
+  display: inline-block;
+  background-color: #d3d3d3;
+  font-weight: bold;
 }
 
-.container {
-  position: absolute;
-  left: 50px;
+button:hover {
+  background-color: #1e0500;
+  color: #d3d3d3;
 }
 
 #wheel {
@@ -90,13 +109,13 @@ button {
 }
 
 #wheel > :nth-child(odd) {
-  background-color: #000;
+  background-color: #1e0500;
   color: #fff;
 }
 
 #wheel > :nth-child(even) {
   background-color: #fff;
-  color: #000
+  color: #1e0500;
 }
 
 /*#wheel div:nth-child(1) {
@@ -173,8 +192,9 @@ button {
 
 .spin {
   margin: 180px;
+  margin-top: 180px;
   width: 200px;
-  height: 310px;
+  height: 170px;
   float: left;
   position: absolute;
   -webkit-perspective: 800;
@@ -195,7 +215,8 @@ button {
 #map {
   width: 40%;
   height: 400px;
-  margin: 30px;
+  margin: 35px;
+  margin-right: 50px;
   background-color: gray;
   box-sizing: border-box;
   border: 1px solid black;
